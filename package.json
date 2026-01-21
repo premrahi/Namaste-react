@@ -1,0 +1,28 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "this is namaste react by prem rahi",
+  "keywords": [
+    "react",
+    "namaste",
+    "react"
+  ],
+  "homepage": "https://github.com/premrahi/Namaste-react#readme",
+  "bugs": {
+    "url": "https://github.com/premrahi/Namaste-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/premrahi/Namaste-react.git"
+  },
+  "license": "ISC",
+  "author": "gulab jaamun",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
