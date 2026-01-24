@@ -1,40 +1,52 @@
-import React from "react" ; 
-import ReactDOM from "react-dom/client" ;
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-//attributes
-const heading = React.createElement(
-  "h1",
-  { id: "main" },
-  "hey there from react",
+// react element  ==> Object ==> HTMLElement(render)
+// const heading = React.createElement("h1" , {id : "heading"} , "this is heading")
+// console.log(heading)
+
+//JSX -> it is not html in js , it is html like syntax or XML like.
+// const jsxHeading = <h1 id="heading">this is a jsx heading</h1>
+// console.log(jsxHeading)
+
+//react element
+const heading = (
+  <h1 id="heading" tabIndex={2}>
+    this is a jsx heading
+  </h1>
 );
+console.log(heading);
+
+
+//react component
+//class based component - OLD
+//functional component - NEW - just a js component
+
+
+//react functional component
+
+
+const Title = ()=>{
+    return (<h1 className="aalu" tabIndex="4">
+        this is pirated namaste react
+    </h1>) ; 
+}
+
+const HeadingComponent = ()=> (
+    <div id="container">
+        <Title/>
+        <h3>Namaste react h3</h3>
+    </div>
+) // a js function that return a react element or JSX code
+
+
+
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading); // way to render react element
 
-root.render(heading);
-
-// nested element in html
-/* 
-<div>
-    <div>
-        <h1></h1>
-    </div>
-</div>
-
-*/
-
-//nested element in react
-
-const secHeading = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement(
-    "div",
-    { id: "child" },
-    [React.createElement("h1", {}, "this is a nested element!" ),
-    ,React.createElement("h2", {}, "this is 2nd nested element! and it is very very deep" ) ]
-  ), // IF WE WANT TO PASS SIBLINGS TO THE CREATE ELEM. WE NEED TO PASS IT AS array ,
-);
-
-const secRoot = ReactDOM.createRoot(document.getElementById("secRoot")) ;
-
-secRoot.render(secHeading) ;
+root.render(<HeadingComponent />) ; //way to render a component
