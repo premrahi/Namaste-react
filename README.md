@@ -1,0 +1,17 @@
+# parcel
+- dev build
+- local server
+- HMR (hot module replacement) ~ automatically refreshes the file - hot reloading
+- uses a file watching algorithm which is written in c++.
+- caching ~ faster build
+- image optimization
+- minification of file
+- bundling 
+- compress
+- consistent hashing
+- code splitting 
+- differential bundling - supports older browsers
+- diagnostics
+- error handling
+- HTTPs 
+- Tree shaking - remove unused code
